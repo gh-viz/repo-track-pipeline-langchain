@@ -16,7 +16,7 @@ class FetchPypiDownloads
     response = HTTP.get(url)
 
     data = response.parse
-   
+    p data
     if data["total_downloads"].nil?
       puts "no downloads"
     else
